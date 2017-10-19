@@ -7,6 +7,7 @@
     "build": "babel ./src --out-dir ./lib",
     "build:watch": "babel ./src --out-dir ./lib --watch",
     "build:clean": "node_modules/.bin/rimraf ./lib",
+    "postinstall": "node ./scripts/compileYoga.js",
     "precompile": "node ./scripts/compileYoga.js"
   },
   "keywords": [
